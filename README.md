@@ -10,3 +10,8 @@ In this repository, you also have a .txt example file that you will be able to u
 -Being able to change the users perspective option <br/>
 -Design reworks <br/>
 -Bug fixes <br/>
+
+# Acknowledgements
+-Thanks to the Codemyhobby YouTube channel for letting me use a part of his WhatsApp chatbox CSS code into my project, it was incredibly helpful. </br>
+-Thanks to Diego for letting me use our conversation as an example file. </br>
+-Thanks to Marco and @hyprflips for the constant support into this project.
