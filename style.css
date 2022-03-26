@@ -90,6 +90,7 @@ body { /*fondo fondo verde*/
   margin-left: 15px;
   margin-right: 15px  ;
   padding-top: 8px;
+  text-overflow: ellipsis;
 }
 
 .imgText span{ /*estilo de "online" abajo del nombre de usuario*/
@@ -266,8 +267,7 @@ body { /*fondo fondo verde*/
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  height: 50px;
   width: 24.5%;
   font-size: 16px;
   cursor: pointer;
@@ -288,8 +288,7 @@ body { /*fondo fondo verde*/
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   color: black;
-  padding-top:15px;
-  padding-bottom: 15px;
+  height: 50px;
   width: 24.5%;
   font-size: 16px;
   cursor: pointer;
