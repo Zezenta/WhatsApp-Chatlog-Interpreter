@@ -6,6 +6,8 @@ var nombreusuario1 = ""; //el nombre del usuario1
 var nombreusuario2 = ""; //el nombre del usuario2
 var nombreusuario1encontrado = false; //es para ver si tengo que volver a buscar el nombre del usuario1
 var nombreusuario2encontrado = false; //es para ver si tengo que volver a buscar el nombre del usuario2
+var estadoboton = true;
+
 
 document.getElementById('inputfile').addEventListener('change', function() { //escucha cuando un archivo se sube al boton de subir archivo
               
@@ -141,10 +143,12 @@ function crear_div_mensaje(contenido, hora, horario, fecha, usuario)
 
 	if(usuario == true)
 	{
+		estructura_mensaje.classList.add("originalmente2")
 		estructura_mensaje.classList.add("friend_msg");
 	}
 	else if(usuario == false)
 	{
+		estructura_mensaje.classList.add("originalmente1");
 		estructura_mensaje.classList.add("my_msg");
 	}
 
@@ -154,4 +158,53 @@ function crear_div_mensaje(contenido, hora, horario, fecha, usuario)
 	mensajito.appendChild(horamensaje);
 
 	document.getElementById("mensajesdetexto").appendChild(estructura_mensaje);
+}
+
+
+
+
+//BOTONES DE USUARIOS
+var mensajes_usuario1 = document.getElementsByClassName("originalmente1");
+var mensajes_usuario2 = document.getElementsByClassName("originalmente2");
+
+function botonejecutar1()
+{
+	//CSS COLORES
+	botonusuario1.style.backgroundColor = "#075E54";
+	botonusuario1.style.color = "white";
+	botonusuario2.style.backgroundColor = "#FFFFFF";
+	botonusuario2.style.color = "black";
+
+	//CAMBIANDO DE LUGARES LOS MENSAJES
+	for(var i = 0; i<=mensajes_usuario1.length-1; i++)
+	{	
+		mensajes_usuario1[i].classList.add("my_msg");
+		mensajes_usuario1[i].classList.remove("friend_msg");
+	}
+	for(var i = 0; i<=mensajes_usuario2.length-1; i++)
+	{	
+		mensajes_usuario2[i].classList.add("friend_msg");
+		mensajes_usuario2[i].classList.remove("my_msg");
+	}
+}
+
+function botonejecutar2()
+{
+	//CSS COLORES
+	botonusuario1.style.backgroundColor = "#FFFFFF";
+	botonusuario1.style.color = "black";
+	botonusuario2.style.backgroundColor = "#075E54";
+	botonusuario2.style.color = "white";
+
+	//CAMBIANDO DE LUGARES LOS MENSAJES
+	for(var i = 0; i<=mensajes_usuario1.length-1; i++)
+	{	
+		mensajes_usuario1[i].classList.add("friend_msg");
+		mensajes_usuario1[i].classList.remove("my_msg");
+	}
+	for(var i = 0; i<=mensajes_usuario2.length-1; i++)
+	{	
+		mensajes_usuario2[i].classList.add("my_msg");
+		mensajes_usuario2[i].classList.remove("friend_msg");
+	}
 }
