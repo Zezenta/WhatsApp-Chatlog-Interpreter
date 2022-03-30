@@ -7,9 +7,7 @@ In this repository, you also have a .txt example file that you will be able to u
 
 # Future features
 -Dark Mode option <br/>
--Being able to change the users perspective option <br/>
--Design reworks <br/>
--Bug fixes <br/>
+-Line break bug fix <br/>
 
 # Acknowledgements
 -Thanks to the Codemyhobby YouTube channel for letting me use a part of his WhatsApp chatbox CSS code into my project, it was incredibly helpful. </br>
